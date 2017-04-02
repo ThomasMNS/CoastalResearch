@@ -89,23 +89,39 @@ a {
 }
 
 
-/* Hero */
+/* Slider */
 
-.HeroOuter {
+.SliderOuter {
     margin-top: 30px;
 	padding-bottom: 15px;
 }
 
-.Hero {
-    background-image: url(hero_background.png);
+.SliderInner {
+	position: relative;
 }
 
-.HeroInner {
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 50px 0 50px 0;
-    padding: 40px;
-    font-size: 1.1rem;
-    text-shadow: 1px 1px 5px rgb(120, 120, 120);
+.slider_caption {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+}
+
+.SliderHeader {
+	margin: 0 5px 7px 5px;
+}
+
+.SliderContent {
+	margin: 5px;
+	font-size: 0.9em;
+}
+
+.SliderList li img {
+	width: 100%;
+	max-width: 1200px;
 }
 
 
@@ -293,5 +309,9 @@ a {
 
 	.FooterLogo {
 		margin: 0;
+	}
+
+	.slider_caption {
+	padding: 10px;
 	}	
 }
